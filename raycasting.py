@@ -2,10 +2,13 @@ import pygame
 from pygame.locals import *
 import math as m
 
+game_name = ("DEFAULT_V1")
+
+
 win_width, win_height = (1600, 900)
-fps = 165 # 165hz monitor btw the way
+fps = 60 # yes
 display = pygame.display.set_mode((win_width, win_height))
-pygame.display.set_caption("Raycasting")
+pygame.display.set_caption(game_name)
 clock = pygame.time.Clock()
 
 environment = [
@@ -30,7 +33,7 @@ run = True
 while run:
     clock.tick(fps)
     pygame.display.update()
-    pygame.display.set_caption("Raycasting - FPS: " + str(round(clock.get_fps())))
+    pygame.display.set_caption(game_name + " - FPS: " + str(round(clock.get_fps())))
 
     for e in pygame.event.get():
         if e.type == QUIT:
