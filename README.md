@@ -1,3 +1,3 @@
 cone engine.
 
-THE FIRST ASCII ENGINE!!!
+easy to use!!!
