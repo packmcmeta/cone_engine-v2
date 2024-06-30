@@ -5,7 +5,7 @@ import math as m
 game_name = ("DEFAULT_V1")
 
 
-win_width, win_height = (1600, 900)
+win_width, win_height = (300, 600)
 fps = 60 # yes
 display = pygame.display.set_mode((win_width, win_height))
 pygame.display.set_caption(game_name)
